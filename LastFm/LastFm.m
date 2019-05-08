@@ -469,6 +469,7 @@
 - (NSOperation *)getInfoForArtist:(NSString *)artist successHandler:(LastFmReturnBlockWithDictionary)successHandler failureHandler:(LastFmReturnBlockWithError)failureHandler {
     NSDictionary *mappingObject = @{
         @"bio": @[ @"./bio/content", @"NSString" ],
+	@"mbid": @[ @"./mbid", @"NSString" ],
         @"summary": @[ @"./bio/summary", @"NSString" ],
         @"name": @[ @"./name", @"NSString" ],
         @"url": @[ @"./url", @"NSURL" ],
